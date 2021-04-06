@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data.OleDb;
 using System.Linq;
 using System.Text;
 
@@ -16,7 +17,6 @@ namespace WindowsFormsApp4.DBConnection
 
         public OleDbConnection GetStringConnection()
         {
-
             OleDbConnection ole = new OleDbConnection("Provider=Microsoft.ACE.OLEDB.12.0;Data Source=" + DataBase + ";");
             return ole;
         }

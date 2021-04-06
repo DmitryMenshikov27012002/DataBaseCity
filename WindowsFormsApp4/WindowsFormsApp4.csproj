@@ -52,7 +52,20 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DBConnection\SQLQuery.cs" />
     <Compile Include="DBConnection\DBConnection.cs" />
+    <Compile Include="Forms\DistrictF.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\DistrictF.Designer.cs">
+      <DependentUpon>DistrictF.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\SettingsP.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\SettingsP.Designer.cs">
+      <DependentUpon>SettingsP.cs</DependentUpon>
+    </Compile>
     <Compile Include="MainForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -61,6 +74,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Forms\DistrictF.resx">
+      <DependentUpon>DistrictF.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SettingsP.resx">
+      <DependentUpon>SettingsP.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -73,6 +92,7 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <None Include="app.config" />
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
